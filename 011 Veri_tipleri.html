@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var sayi = 10; //integer = sayı veri türleri
+        console.log(sayi);
+
+        var text = "Merhaba"; //string = yazı veri türleri
+        console.log(text);
+
+        var bool = true; // boolean = doğru/yanlış veri tipi 
+        var bool1 = false;
+        console.log(bool);
+
+        var array = [10,20,30,40,"Merhaba", true]; //array = dizi veri tipi
+        console.log(array); //tüm diziyi yazdırır
+        console.log(array[0]); //dizinin ilk elemanını tanımlar
+        //diziler indexlene bilir
+
+        var json = {"date":"2019","day":"28"} //sözlük veri tipi denebilir. obje tipi denebilir
+        console.log(json.date); //cağırma islemi degisken.anahtar
+        //seklinde olur
+        const personel = {
+            Adı: "Berkay",
+            SoyAdı : "Aktaş",
+            id       : 5566,
+            tümİsim : function() {
+              return this.Adı + " " + this.SoyAdı;
+            }
+          };// objeler fonksiyon barındıra bilir
+
+        //undefined veritipi = tanımlanmamış veri tipidir
+        //Null veri tipi = boş hiçbir veri içermeyen verilerdir
+
+        typeof "John"; //veritipi öğrenme
+    </script>
+</head>
+<body>
+Veri tipleri
+</body>
+</html>

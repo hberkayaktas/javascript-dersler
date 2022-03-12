@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ ***HTML'de JavaScript kodu ve <script></script> etiketleri arasına eklenir .
+    head kısmına veya body etiketi arasına yazabilirsin
+    fakat body kısmındaki script daha yavaş çalışır.
+    bu yavaşlıktan kurtulmak için script etiketi sayfanın en sonuna yazılmalıdır
+
+ ***Harici Js dosyası ile çaşlışma
+    <script src="myScript.js"></script>
+    kodunu head etiket arasına girip harici dosya ile çalışabilirsin
+
+ ***Harici JavaScript Avantajları
+        Komut dosyalarını harici dosyalara yerleştirmenin bazı avantajları vardır:
+            HTML ve kodu ayırır
+            HTML ve JavaScript'in okunmasını ve bakımını kolaylaştırır
+            Önbelleğe alınmış JavaScript dosyaları sayfa yüklemelerini hızlandırabilir.
+
+ ***Dış Referanslardan da faydalana bilirsin örn;
+        <script src="https://www.w3schools.com/js/myScript.js"></script>
+        alt indexlerde buna dahildir
+        <script src="/js/myScript.js"></script>
+
+<script>
+   //Yorum Satırları böyle yapılır
+   /*
+   Bu 
+      bir
+         çoklu 
+            yorum
+               satırı
+   */ 
+</script>
+
+
+eğer kullanıcı java scripti kapadıysa uyarı
+ vermek için noscript etiketleri kullanılır 
+<noscript>
+   Sayan kullanıcımız, tarayıcınızda 
+   Javascript kodlarınan çalıştırılması pasif durumdadır.
+</noscript>
+
+eğer bozuk bir tarayıcıda veya eski bir tarayıcıda çalışmayan 
+javascript kodumuzun çirkin bir görüntü oluşturmasını istemiyorsak 
+html yorum etiketini kullanırız
+
+<script>
+   <!--
+      console.log("çalışan javascript");
+   -->
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    **JavaScript Yazım kurallları ve ifadeleri (Statements)
+    --noktalı virgül ;
+        Noktalı virgüller JavaScript deyimlerini ayırır.
+        Her yürütülebilir ifadenin sonuna noktalı virgül ekleyin
+        aşağıdaki iki örneğin hiçbir farkı yoktur.  
+
+        Örnek1;                 Örnek2;      
+        let a, b, c;            a = 5; b = 6; c = a + b;
+        a = 5;
+        b = 6;
+        c = a + b;
+    
+    --JavaScript White Space
+        JavaScript birden çok boşluğu yok sayar. 
+        Daha okunabilir hale getirmek için kodunuza
+        boşluk eklemenin bir sakıncası yok.
+
+        Aşağıdaki örnekler aynı sonucu döndürür.
+        let person = "berkay";
+        let person="berkay";
+    
+    --JavaScript Satır Uzunluğu ve Satır Sonları
+        En iyi okunabilirlik için programcılar genellikle 80
+        karakterden uzun kod satırlarından kaçınmayı severler.
+        Bir JavaScript ifadesi bir satıra sığmıyorsa,
+        onu bölmek için en iyi yer bir operatörden sonrasıdır:
+
+        Örnek;
+        document.getElementById("demo").innerHTML =
+        "Merhaba Dünya";
+    
+    --JavaScript Kod Blokları
+        JavaScript ifadeleri, kod bloklarında,
+        küme parantezleri {...} içinde gruplandırılabilir.
+        Kod bloklarının amacı,
+        birlikte yürütülecek ifadeleri tanımlamaktır.
+
+        Örnek;
+        function myFunction() {
+            document.getElementById("demo1").innerHTML = "Merhaba Dünya";
+            document.getElementById("demo2").innerHTML = "merhaba dünya2";
+        }
+    
+    --JavaScript Anahtar Kelimeleri
+        Anahtar kelime : Tanım
+        var: Bir değişken tanımlama anahtarı
+        let: Bir blok değişkeni bildirir
+        const: Bir sabit değişken tanımlar. 
+        if: Bir koşulda yürütülecek bir ifade bloğunu işaretler
+        switch: koşul sorgusu ile sartlanarak çalışma yapar
+        for: Bir döngüde yürütülecek bir ifade bloğunu işaretler
+        function: Bir işlev bildirir
+        return: fonksiyondan elde edilen cıktı sağlanır. 
+        try: Bir ifade bloğuna hata işlemi uygular
+</body>
+</html>
