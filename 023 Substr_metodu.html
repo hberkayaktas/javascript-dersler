@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // substr ()Kendisine verilecek olan parametreler ile tanmmlanmış
+        // değişken içeriği aralığında bulunan değerleri kopyalayarak
+        // yeni bir içerik oluşturur ve oluşturduğu içeriği geriye döndürür.
+
+        // 1. Parametre :Başlangıç karakteri sıra num.
+        // 2. Parametre : kaç karakter alınacağı
+
+        var metin = "Javascript dünya üzerinde kullanılan en yaygın script dilidir.";
+        document.write(metin + "<br />");
+        var sonuc = metin.substr(0, 10); 
+        document.write(sonuc + "<br />");
+        
+        //substr  eksi değerde alabilir örn
+        var sonuc2 = metin.substr(-15, 6); 
+        document.write(sonuc2 + "<br />");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

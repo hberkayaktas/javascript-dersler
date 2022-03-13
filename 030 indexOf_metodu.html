@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // indexOf () Değişken içerisinde parametrik olarak verlen
+        // değeri arar ve ilk eşleşmeyi sağlayan değişken
+        // içeriginin indis / index değerini geriye döndürür.
+
+        var metin = "Javascript egitim seti"; 
+        document.write(metin + "<br />");
+        
+        var sonuc=metin.indexOf("e"); 
+        //kısaca e harfinin bulunduğu yeri döndürür 
+        // eğer içerik yoksa -1 döndürür
+        //büyük küçük harf duyarlıdır
+        document.write(sonuc +"<br>");
+        
+        
+        var sonucs=metin.indexOf("e",15);
+        //ilk eyi değilde e'den sonra karşısına ilk çıkan e nin indexini döndürür
+        document.write(sonucs);   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        //burası global alan
+
+        {
+            //burası bir local alandır
+        }
+
+        //örnek 
+
+        let isim = "berkay ";
+        if(true){
+            let isim = "cüneyt ";
+            document.write(isim); 
+            //yerel değişken kapsam alanında yeniden tanımlanabilir
+            
+            //eğer sadece local alanda değişken tanımlanırsa
+            //kapsam dışına çıkılınca tekrar çağırılamaz
+        }
+        document.write(isim);
+        //global değişen kapsam alanından etkilenmeden kurtulur
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

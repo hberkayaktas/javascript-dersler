@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // search() Kendisine parametre olarak verilen değer doğrultusunda
+        // değişken içeriğini arayarak ilk eşleşmeyi sağlayan değişken
+        // içeriğinin indis / index değerini geriye döndürür. düzenli ifade alabilir.
+        // i içerigin büyuk harf / küçuk olmasına bakmaz (Düzenli ifade)
+
+        var metin ="Javascript eğitim seti";
+
+        document.write(metin + "<br />");
+
+        var islem = metin.search("script"); 
+        //Case sensitive büyük küçük harf duyarlıdır.
+        document.write(islem +"<br>");
+
+        //Düzenli ifade ile Arama yapma
+        var islems = metin.search(/Script/i); //bu bir düzenli ifadedir case sensitive'liğe bakmaksızın index aramaya yarar 
+        document.write(islems);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

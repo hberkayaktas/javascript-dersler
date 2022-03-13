@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+        // match() Kendisine parametre olarak ver1len deger doğrultusunda
+        // değişken içerigint kontrol eder ve eşleşen değer varsa 1çerigin
+        // eşleşen kismndan yent bir içerik oluşturur ve oluşturdugu
+        // içeriği geriye döndürür.    (Düzenli ifade alabilir.)
+        //g İçeriğin tamamn üzerinde çalışmasını sağlar. (Düzenli ifade)
+        //i İçeriğin büyük harf / küçük harf olmasna bakmaz. (Düzenli ifade)
+        
+        var metin = "Hami Berkay AKTAŞ javascript Egitim Seti  -JavaScript A'dan Z'ye"; 
+        document.write(metin + "<br />");
+
+        var sonuc = metin.match("Javascript"); 
+        document.write(sonuc +"<br>");
+        
+        var deger = /javascript/gi;
+        var sonucs = metin.match(deger); //büyük küçük olmasına bakmak sızın içeriğin tümünü arar
+        document.write(sonucs);
+
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

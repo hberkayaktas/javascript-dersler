@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+        // split() Kendisine parametre olarak tanımlanmış değer doğrultusunda
+        // değişken içeriğini bölümleyerek yent bir dizi
+        // oluşturur ve oluşturduğu değeri gerlye döndürür.
+        var metin = "Split Metodu Veriyi Atanan Operatöre Göre Bölmeye Yarar"; 
+        document.write(metin + "<br />");
+
+        var sonuc = metin.split(" ",4); 
+        // " " boşluk lardan böl ve ilk 4 tanesini böl 
+        // ,4 yazmaz isek hepsini böler
+        document.write(sonuc + "<br>")
+        document.write(sonuc[2]) //numaralı indexi ver
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

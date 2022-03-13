@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+        // Localecompare(): Üzerinde çalışılan değişkene parametrik olarak verilen diger
+        // bir değişken içeriğint tarayıcı diline göre karşılaştırarak
+        // sonucu geriye döndürür. (Unicode (everensel kod) olarak karşılaştırır)
+        
+        // Sonuç değerleri
+        // -1 Birinci değişken içeriği, ikinci değişken içeriğinden önce geliyorsa
+        // @ Birinci değişken içeriği, ikinci değişken içeriğine eşitse
+        // 1 Birinci değişken içerigi, ikinci değişken içeriğinde sonra geliyorsa
+       
+        var icerikbir ="ABC";
+        var icerikiki ="ABD";
+        document.write(icerikbir + "<br />");
+        document.write(icerikiki + "<br /><br />");
+        
+        
+        var sonuc = icerikbir.localeCompare(icerikiki);
+        document.write(sonuc)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

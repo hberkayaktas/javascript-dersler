@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+        // replace() Kendisine verilecek olan parametreler doğrultusunda degişken içerigini
+        // kontrol eder ve eşleşen değerlerin değiştmin saglayarak yent bir içerik
+        //oluşturur ve oluşturduğu içerigi geriye döndürür. (Düzenli ifade alabilir.)
+        // 1. Parametre :Değişecek içerik.
+        // 2. Parametre :Yeni içerik.
+
+        var metin = "Dünyada en yaygın olarak kullanılan script dili php'tir.";
+        document.write(metin + "<br />");
+
+        var sonuc = metin.replace(/Php/i,"Javascript"); 
+        // Değişecek, Yeni
+        // sadece ilk ifade değişir
+        document.write(sonuc + "<br>");
+
+
+        var kaynak = "php PHP Php pHP pHp";
+        var yeni = kaynak.replace(/Php/gi,"Javascript"); //tümünü değiştir 
+        
+        document.write(yeni);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
