@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function deneme (parametrebir, parametreiki){
+            // 3 ve 6 değerini aldık
+                function test(sonbir){
+                    //iç fonksiyon açıp tek parametre ile çağırdık
+                    
+                    var sonuc = sonbir * sonbir;
+                    document.write(sonuc + "<br />");
+                    //karesini alıp yazdırdık
+                }
+            
+            return test(parametrebir) + test(parametreiki);//testfonk ikikez çalıştırdık
+
+        }
+        deneme (3, 6);
+
+
+
+        //örnek
+        function hesapla(tür,deger1,deger2){
+            function carpma(deger1,deger2){
+                var sonuc = deger1*deger2;
+                return sonuc;
+            }
+            document.write(tür + " isleminin sonucu :"); //tür yazdırdık
+            document.write(carpma(deger1,deger2)); // fonk. içindeki fonk'a değerleri yolladık
+        }
+        hesapla("carpma",4,5);//türü belirttik deger1, değer 2 beirttik
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

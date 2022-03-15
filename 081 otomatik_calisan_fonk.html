@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" language="javascript">
+            //kendi kendine çalışan fonksiyon
+            /*
+            (fonksiyon)(parmetre,parametre);   bu yapıda otomatik çalışır
+            
+            */
+            //basit hali
+            (function(){ 
+                document.write("Merhaba <br>");
+            })();
+
+            //parametre atanmış hali
+            (function test(parametrebir, parametreiki) {
+                document.write(parametrebir);
+                document.write(parametreiki);
+            }) ("Merhaba", "Nasılsın <br>");
+
+            //Varsayılan değer ataması ve değişken ataması
+            var degisken = " nasılsın";
+            (function(parametrebir, parametreiki = " Berkay ", parametreuc) {
+                //
+                document.write(parametrebir );
+                document.write(parametreiki );
+                document.write(parametreuc + "<br />");
+            }) ("Merhaba", undefined , degisken); 
+            //undefined = tanımsız
+            //ikinci değeri tanımlamadık fakat varsayılan değer berkay
+            //üç tip tanımlama yaptık
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

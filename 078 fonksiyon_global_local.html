@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" language="javascript">
+            //Global ve local değişken farkı
+            //global değişkenler local alanlarda yeniden tanımlanırsa 
+            // local değişken gibi davarnır fakat kapsama alnı dışına çıkınca
+            // tekrar global olarak devam eder 
+            
+            //Örnek;
+
+            var degisken1 = "hami ";
+            var degisken2 ="AKTAŞ" ;
+            function isim_yazdir(){
+                var degisken1 = "Berkay ";
+                document.write(degisken1+degisken2 );
+                //local de tanımlanan değişken localden çıkınca eski haline döner
+            }
+            document.write(degisken1+degisken2+"<br>");
+            isim_yazdir();
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

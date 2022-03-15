@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function parabirimi (birim, tutar){
+            //2 fonksiyon içi tür karşılaştırması yapılır.
+
+            if(birim=="Türk Lirası"){
+                var kur = 1;
+            }else if(birim=="Amerikan Doları"){
+                var kur = 3;
+            }else if(birim=="Euro"){
+                var kur = 4;
+                //3 kur bulurunur 
+            }
+            return tutarhesapla(kur, tutar);
+            //4 tutar hesapla fonk.'a doğru tür ve miktar döndürülür
+        }
+        
+        function tutarhesapla(gelenkur, gelentutar){
+            //5 gelen veri çarpılıp yazdırılır
+            var hesapyap = gelenkur * gelentutar;
+            document.write(hesapyap);
+        }    
+        parabirimi ("Euro", 1220); 
+    // 1 ilk donksiyona tür ve miktar yollanır
+    </script>
+</head>
+<body>
+
+</body>
+</html>

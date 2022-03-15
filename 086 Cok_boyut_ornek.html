@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // dıştan içe tek değişkende değer atama
+        function bir(a){
+            function iki(b){
+                function uc(c){
+                    return a + b + c;
+                }
+                return uc;
+            }
+            return iki;
+        }
+        var sonuc =  bir(5)(10)(8);
+        document.write(sonuc);
+
+
+        //üst fonksiyona değer yollayıp alt fonksiyonda yazdırma örneği
+        function demobir(deger){
+            function testbir(){
+                document.write(deger);
+            }
+            return testbir();
+        }
+        demobir("Berkay Aktaş");
+
+        //Alt fonksiyona özel değer yollama
+        function denemes (){
+            var deger ="İşlem"; //2 - hatta burada local globalde yeniden tanımlandı
+            function sonucs (deger="Örnek"){//birde vasrsayılan olarak yeniden tanımlandı
+                document.write(deger);
+                //fakat kod ikl değeri ower write yaparak üzerine yazıp berkay yazdı
+            }               
+            return sonucs;
+        }
+        denemes ()("Berkay");//1-ikinci fonksiyona özel değer yollandı
+
+        //her fonksiyona kendi içinde değer atama örneği
+        function en_en_dis(aaa){
+            function en_dis (bbb){
+                function dis(ccc){
+                    function ic(ddd) {
+                        var sonuc =aaa + bbb + ccc + ddd;
+                        document.write(sonuc);
+                    }                    
+                    ic(9);
+                }
+                dis(15);
+            }    
+            en_dis(8);
+        }
+
+        en_en_dis(5);// endıştan çağırıyoruz
+    </script>
+</head>
+<body>
+
+</body>
+</html>

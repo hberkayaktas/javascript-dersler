@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+    // try     = Hata oluşturabilecek kodlar için kullanlır.
+    // catch   = Hata oluşursa çalıştınlacak kodlar için kullanmlır.
+    // finally = Hata oluşsada oluşmasada çalıştırılacak kodlar için kullanılır.
+    // throw   = Hata oluşturabilecek kodlar için istisnai durumlarda kullanılır.
+      
+    try{
+        var isim = "volkan";
+        //throw("Değişken Tanımlama Hatası. soyisim adındaki değişken yok");
+        //var soyisim = "Alakent";
+        document.write(isim + "<br />");
+        document.write(soyisim + "<br />");
+    }catch(err){
+        document.write("Hata oluştu <br />");
+        document.write(err);
+        document.write("<br />");
+    }finally{
+        document.write("Hata olsada olmasada çalıştı.");
+    }
+</script>
+</body>
+</html>
