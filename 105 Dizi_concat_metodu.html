@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    // concat () Üzerinde çalışılan diziye parametrik olarak verilen eleman
+    // veya elemanları yada dizi veye dizileri dahil ederek yeni bir dizi
+    // oluşturur ve oluşturmuş olduğu dizi değerini geriye döndürür.
+    var erkekisimleri=["Volkan", "Hakan", "Onur", "Levent", "Serkan"];
+    var bayanisimleri=["Aslı", "Banu", "Hatice", "Derya", "Gökçe"];
+    var renkisimleri = ["Siyah", "Mavi", "Beyaz"];
+
+    document.write(erkekisimleri + "<br />");
+    document.write(bayanisimleri + "<br />");
+    document.write(renkisimleri + "<br />");
+                
+    var ilk = erkekisimleri.concat(renkisimleri);//basit hali
+    var isimler =erkekisimleri.concat(renkisimleri ,bayanisimleri[3]);//alt diziler ile çalışma
+    document.write(isimler);
+    document.write(ilk);
+            
+            
+</script>
+</head>
+<body>
+</body>
+</html>

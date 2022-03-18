@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    // splice () Diziden eleman veya elemanlar silinebilmesini sağlar 
+    //ve sildiği eleman veya elemanların değerini geri döndürür.
+    // Ayrıca diziye eleman veya elemanlar eklenebilmesini sağlar.
+    var renkler =["Siyah", "Beyaz", "Mavi", "Sarı", "Kırmızı"];
+    document.write("Dizinin orjinal hali: " + renkler + "<br />");
+
+    //diziden eleman silme
+    var islem =renkler.splice(1, 1); 
+    //1 . indisdeki elemandan başla ve 1 eleman sil 
+    //eğer virgüldensonra 3 yazsaydık 3 eleman silecekti
+    // virgülden sonra birşey yazmaz isek 1. indexden başlar ensona kadar siler
+    document.write(renkler + "<br />");
+    
+    //diziye birşey ekleme
+    // 1. index git , 0 = hiçbirşey silme , "gri" değerini ekle  
+    var islem = renkler.splice(1, 0, "Gri");
+    document.write("Dizinin son hali: " + renkler);
+
+    var islem =  renkler.splice(1, 0, "Gri", "Bordo", "Yeşil", "Turuncu");
+    document.write("Dizinin son hali: " + renkler);
+            
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    // findIndex () :Kendisine parametre olarak verilen fonksiyonu dizideki
+    //        her eleman üzerine tek tek olmak üzere çalıştırır ve 
+    //        dizi içerisinde parametrik olarak verilen değeri arar.
+    //        İlk eşleşmeyi sağlayan dizi elemanının indis index değerini
+    //        geriye döndürür.
+    // 1. Parametre :Her işlemde elde edilen dizi elemanı.
+    // 2. Parametre :Her işlemde elde edilen dizi elemanının indis/index değeri.
+    // 3. Parametre :Her tekrarda diziyt tutan değişkenin referansi.
+            
+            
+            
+            
+    function deneme (eleman, sira, referans){
+         return eleman == "Sehpa";
+    }
+    
+    var esyalar =["vitrin", "Vazo", "Sehpa", "Dolap", "Koltuk", "Masa"];
+    document.write(esyalar + "<br />");
+                
+    var sonuc = esyalar.findIndex(deneme);
+    document.write(sonuc);
+
+        
+            
+            
+</script>
+</head>
+<body>
+</body>
+</html>

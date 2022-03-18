@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    // find() Kendisine parametre olarak verilen fonksiyonu dizideki
+    // her eleman üzerine tek tek olmak üzere çalıştırır ve dizi
+    // içerisinde parametrik olarak verilen değeri arar.
+    // İlk eşleşmeyi sağlayan dizi elemanımn değerini geriye döndürür.
+
+    // 1. Parametre :Her işlemde elde edilen dizi elemann.
+    // 2. Parametre :Her işlemde elde edilen dizi
+    //       elemanının indis / index değeri.
+    // 3. Parametre :Her tekrar işleminde diziyi tutan değişkenin referans1.
+
+    function deneme (eleman, sira, referans){
+        return sira == 3;
+    }
+
+    var sayilar=["Siyah", "Beyaz", "Sarı", "Mavi", "Kırmızı"];
+    document.write(sayilar + "<br />");
+        
+    var sonuc = sayilar.find(deneme); 
+    document.write(sonuc);
+
+        
+            
+            
+</script>
+</head>
+<body>
+</body>
+</html>

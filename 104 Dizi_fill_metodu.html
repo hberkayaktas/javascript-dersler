@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    // fill() Kendisine verilecek olan parametreler ile tanımlanmış
+    // dizi aralığında bulunan değeri, parametre ile belirtilmiş
+    // olan değer doğrultusunda dizinin elemanlarını değiştirir
+    // ve dizinin değerini geriye döndürür
+    // 1. Parametre :Değer
+    // 2. Parametre :Başlangıç indisi / indexi
+    // 3. Parametre:Bitiş indisi / indexi
+    
+     
+    var meyveler = ["Elma", "Armut", "Kiraz", "Kaynsı", "Karpuz", "Kavun", "Muz", "Ananas"];
+    document.write(meyveler + "<br />");
+    
+    meyveler.fill("Nar", 3, 5); 
+    //3.-5. indis aralığını Nar ile doldurur bitiş değini vermezsen hepsini dolurur
+    document.write(meyveler);
+           
+            
+</script>
+</head>
+<body>
+</body>
+</html>

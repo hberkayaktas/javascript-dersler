@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    // sort() Dizi içeriğinin sıralanmasını sağlar.
+    // Metot Unicode (evrensel kod) olarak çalışır.
+    var isimler = ["Volkan", "Ümit", "Onur", "Serkan", "Hakan"];
+    document.write("orjinal hali :" + isimler + "<br /><br />");
+    isimler.sort();
+    document.write(isimler + "<br /><br />");
+
+    //sayılarda sıralama
+    var sayilar = [2, 12, 100, 44, 53, 8.55, 75, 10.12];
+    document.write("orjinal hali :" +sayilar + "<br /><br />");
+    sayilar.sort();
+    //bu fonksiyon index ve alt index şeklinde kontrol edeer 
+    document.write(sayilar + "<br /><br />");
+
+    //karışık sıralama
+    var icerikler = [100, "Volkan", 2, 12, "Ümit", "Onur", 53, 44, 8.55, "Serkan", "Hakan", 75, 10.12];
+    document.write("orjinal hali :" +icerikler + "<br /><br />");
+    icerikler.sort();
+    document.write(icerikler+ "<br /><br />");
+            
+    // işaretler ile sıralama
+    var icerikler =[100, "Volkan", 2, 12, "Ümit", "+", "Onur", 53, 44, "!", 8.55, "Serkan", "?", "Hakan", 75, "*", 10.12];
+    document.write("orjinal hali :" +icerikler + "<br /><br />");
+    icerikler.sort();
+    document.write(icerikler + "<br /><br />");
+
+    // küçükten büyüğe sıralama
+    function sirala(a, b){
+        return a-b;
+    }
+    var sayilar = new Array(2, 12, 100, 44, 53, 8.55, 75, 10.12);
+    document.write(sayilar + "<br /><br />");
+    sayilar.sort(sirala);
+    document.write(sayilar+ "<br /><br />");
+        
+    //  büyükten küçüğe sıralama
+    function sirala(a, b){
+        return b-a;
+    }
+    var sayilar = new Array(2, 12, 100, 44, 53, 8.55, 75, 10.12);
+    document.write(sayilar + "<br /><br />");
+    sayilar.sort(sirala);
+    document.write(sayilar+ "<br /><br />");        
+    
+    // Diziyi Alfabetik sıralama
+    function sirala2(a, b){
+        var alfabe = "AaBbCcÇçDdEeFfGgĞgHhIıİiJjKkLlMmNnOoPpQqRrSsŞşTtUuÜüVvWwXxYyZz";
+        if(a.length === 0 || b.length === 0){
+            return a.length-b.length;
+        }else{
+            var bir= alfabe.indexOf (a[0]);
+            var iki= alfabe.indexOf (b[0]);
+                if(bir !== iki){
+                    return bir-iki;
+                }else{
+                    return sirala2(a.slice(1), b.slice(1));
+                }          
+        }                       
+    }                       
+            
+    var isimlers = ["Volkan", "Ümit", "Onur", "Serkan", "Hakan", "Çağatay", "Şinasi"];
+    document.write(isimlers + "<br /><br />");
+    isimlers.sort(sirala2);
+    document.write(isimlers +"<br /><br />");
+
+    // Diziyi Ters Alfabetik sıralama
+    function sirala2(a, b){
+        var alfabe = "AaBbCcÇçDdEeFfGgĞgHhIıİiJjKkLlMmNnOoPpQqRrSsŞşTtUuÜüVvWwXxYyZz";
+        if(a.length === 0 || b.length === 0){
+            return b.length-a.length;
+        }else{
+            var bir= alfabe.indexOf (a[0]);
+            var iki= alfabe.indexOf (b[0]);
+                if(bir !== iki){
+                    return iki-bir;
+                }else{
+                    return sirala2(a.slice(1), b.slice(1));
+                }          
+        }                       
+    }                       
+            
+    var isimlers = ["Volkan", "Ümit", "Onur", "Serkan", "Hakan", "Çağatay", "Şinasi","Zeynel"];
+    document.write(isimlers + "<br /><br />");
+    isimlers.sort(sirala2);
+    document.write(isimlers + "<br /><br />");
+                        
+</script>
+</head>
+<body>
+</body>
+</html>

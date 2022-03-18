@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    // reduce ()Kendisine parametre olarak verilen fonksiyonu dizideki her eleman
+    // üzerinde soldan sağa tek tek olmak üzere çalıştırır ve tek bir
+    // değer oluşturarak, oluşturduğu değeri geriye döndürür
+    // 1. Parametre :Dizi içerisinde mevcut değer öncesindeki
+    //      değerlerin toplLamn / birleşimi.
+    // 2. Parametre :Her işlemde elde edilen dizi elemanı.
+    // 3. Parametre :Her işlemde elde edilen dizi 
+    //      elemanının indis / index değeri.
+    // 4. Parametre :Her tekrarda diziyi tutan değişkenin referansı.
+  
+
+
+
+
+    function deneme (deger, eleman, sıra, degisken){
+    return deger+eleman; 
+    // değer = mevcut değer + sonradan gelen değer
+    // eleman = 100,200,300 gibi değerler
+    // sıra = indexler 0,1,2,3
+    // degisken dersen komple diziyi yazar
+    }
+
+    var sayilar =[100, 200, 300, 400, 500];
+    document.write(sayilar + "<br />");
+    
+    var islem=sayilar.reduce(deneme);
+    document.write(islem);
+
+        
+            
+            
+</script>
+</head>
+<body>
+</body>
+</html>
