@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    // caller Fonksiyonu çağıran diğer bir fonksiyon referans
+    // olarak alınarak tüm bilgilerinin elde edilmesini sağlar.
+
+    function esas (){
+        for (var baslangic = e; baslangic.esas.caller.arguments.length; baslangic++){
+            document.write(diger.arguments[baslangic] + "<br />");
+        }
+    }
+    
+    function diger(isim, soyisim){
+        esas ();
+    }
+
+    diger("Berkay", "Aktaş");
+    </script> 
+</head>
+<body>
+
+</body>
+</html>

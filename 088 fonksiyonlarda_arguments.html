@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    // arguments Fonksiyona herhangi bir parametre tanımlanmadan
+    // bile gelebilecek tüm parametre değerlerinin alınmasını sağlar.
+
+    function ornek(){
+        for (var baslangic = 0; baslangic<arguments.length; baslangic++){
+        document.write(arguments [baslangic] + "<br />");
+        }
+    }
+    
+    ornek("hamiberkay","aktas");
+    // bişey yazmasan dahi tüm argümanlar alınır.
+
+
+    //tanımladığından daha fazla değişken gelmesi durumu
+    function ornek2(isim, soyisim){
+        for (var baslangic = 0; baslangic<arguments.length; baslangic++){
+             document.write(arguments[baslangic] + "<br />");
+         }
+    }
+     ornek2("Hami", "Berkay", 25, "Ordu", "Türkiye");
+    </script> 
+</head>
+<body>
+
+</body>
+</html>

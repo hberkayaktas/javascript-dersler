@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    var metin ="Javascript internet üzerinde kullanılan en yaygın script dilidir.";
+   
+    var sonuc;
+    for (sonuc in metin){
+        document.write(metin[sonuc]); //direkt olarak harf harf yazdırdık
+    }
+    
+    var names = ["nuri" , "kaan" , "cüneyt",["hatice","eylül","büşra","nazan"]];
+
+    var variable;
+    for(variable in names){
+        document.write("<br>" + names[variable]);
+        // ama kız isimlerini  tek satırda yazdırdı 
+        //biz bunu istemiyor isek aşağıdaki gibi yaparız
+    }
+
+    // 2
+    var sorgula;
+    for (sorgula in names){
+        if(Array.isArray(names[sorgula])){
+            var ilkkont;
+            for(ilkkont in names[sorgula]){
+                document.write(names[sorgula][ilkkont]+  "-iç fonk<br>");
+                
+            }
+        }else{
+            document.write("<br>" + names[sorgula]);
+        }
+    }
+</script>
+</head>
+<body>
+</body>
+</html>

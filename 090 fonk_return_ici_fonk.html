@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // bir fonksiyon içindeki return ifadesine iç donksiyon tanımlama
+        //
+
+        var kisi= function(){ 
+            var isimsoyisim ="Hami Berkay AKTAŞ";  //değişken atama
+            return {//return içi fonk siyon
+                isimgetir:function(){ //fonksiyon ismi
+                return isimsoyisim; //değer çaırma
+                }
+            }
+        }();
+        var sonuc =  kisi.isimgetir();
+        //kişi fonk. içindeki isim getir fonk çağırma
+        // kişi fonk kendi kendini çağıran fonk oyüzden parantez kullanmadık
+        document.write(sonuc);
+    </script> 
+</head>
+<body>
+
+</body>
+</html>

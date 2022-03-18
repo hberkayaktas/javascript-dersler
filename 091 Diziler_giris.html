@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    // Dizi:Bir değişken içerisinde toplanmış, içerisinde her türden bilgi
+    // ve veriyi depolamak için kullanılan sıralı veri gruplarına verilen isimdir.
+    // indexler / indisler her zaman 0 ile başlar ve her elemanda 1 artarak devam eder.
+    
+    //birinci tanımlama metodu
+    var dizi = ["hasan","hüseyin","necip","fahri"]
+    document.write(dizi[0]+ "<br />");
+    document.write(dizi+ "<br />");
+
+    
+    //ikinci tanımlama metodu
+    var isimler = new Array("Volkan", "Hakan", "Onur", "Serkan", "Ümit");
+    document.write(isimler + "<br />");
+    document.write(isimler [0] + "<br />");
+    document.write(isimler[1] + "<br />");
+    
+    //atama özellikleri
+    /*
+     Dizi içerisinde elemanlar oluşturulurken
+        " (çift tırnak) ile başlanıyorsa " (çift tırnak) ile bitmelidir.
+     Dizi içerisinde elemanlar oluşturulurken 
+        ' (tek tırnak) ile başlanıyorsa' (tek tırnak) ile bitmelidir.
+     Eleman içerisnde aynı tırnak işareti kullanılacak
+      ise muhakkak/ (ters slash) karkateri ile kullanılmalıdır.
+     Rakamsal bir değer (number) verilecek ise tırnak kullanılmamalıdır.
+    */
+    var renkler = new Array("Mavi", 'Sarı', 4, 'Türkiye\'nin başkenti Ankara\'dır.');
+
+    
+    //diziyi başka bir diziye aktarmak
+    var dizi1 = ["cüneyt","necmi"];
+    var dizi2 = dizi1;
+    document.write(dizi2[1] + "<br>");
+
+    //tek satırda birden fazla dizi tanımlama
+    var renkler = ["mavi", "kırmızı"] , sayilar = [1,2,3,4];
+    document.write(renkler +"<br>"+ sayilar+ "<br>");
+
+    // diziyi önden tanımlayıp değeri sonradan atama 
+    //const harici tanımlama yapılabilir çünkü cons değişmez
+    // fakat dizi elemanı tanımlana bilir.
+
+    var sebzeler ;
+    sebzeler = ["marul","salatalık"];
+    document.write(sebzeler + "<br>");
+
+        // Örnek 2
+        var gunler = new Array(8);
+        gunler[0] = "pazartesi";
+        gunler[2] = "çarşamba";
+        gunler[9] = "çıkmaz" ;
+        //aradaki değerleri tanımlamaz isen boşlukları kendi virgülle doldurur 
+        // fakat tekil kullanımda problem olmaz
+        document.write(gunler + "<br>");
+
+    // bir değişkeni dizi gibi çalıştırmak
+    var degisken = "Hami Berkay AKTAŞ";
+    document.write(degisken[5]);
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    //dizinin index ismini değiştirme
+    var gunler = new Array(4);
+    gunler ["BirinciGun"] = "Pazartesi";
+    gunler["IkinciGun"] = "Salı";
+    gunler["UcuncuGun"] ="Çarşamba";
+    
+    document.write(gunler[0]); // bu sorgu boş döner
+    document.write(gunler["BirinciGun"] + "<br>"); // bu sorgu pazartesi döndürür
+    
+    // dizi  tanımlanan eleman değerini değiştirme
+    var araclar = ["araba","ucak"];
+    document.write(araclar + "<br>");
+    araclar[1] = "helikopter";
+    document.write(araclar + "<br>");
+    
+    //dizi içi dizi tanımlama
+    var isims = ["recep", "mahmut", ["elif","kübra"]];
+    document.write(isims + "<br>"); //tüm dizi
+    document.write(isims[2] + "<br>"); // kız isimleri
+    document.write(isims[2][1] + "<br>"); // sadece kübra ismi
+</script>
+</head>
+<body>
+</body>
+</html>
