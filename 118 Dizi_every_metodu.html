@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+      // every ()Kendisine parametre olarak verilen fonksiyon false değeri
+      // döndürene kadar dizi elemanları üzerinde gezinilmesini sağlar.
+      // 1. Parametre :Her işlemde elde edilen dizi elemann.
+      // 2. Parametre :Her işlemde elde edilen dizi elemanının indis / index değeri.
+      // 3. Parametre :Her tekrarlamada işlemin yapıldığı diziyi tutan değişkenin referansı.
+ 
+
+
+
+      function demo(eleman, sira, referans){
+            islemsonuc = eleman;
+            return eleman % 5 === 0;
+      }
+      islemsonuc = "";
+      var rakamlar = [5, 10, 20, 30, 50, 140, 380, 420, 220, 343, 700, 400];
+      document.write(rakamlar+ "<br>");
+      
+      rakamlar.every(demo);
+      document.write(islemsonuc); 
+</script>
+</head>
+<body>
+</body>
+</html>

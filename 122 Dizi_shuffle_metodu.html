@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+      // shuffle() Dizinin her elemanı üzerinde tek tek çalışarak tüm elemanları karıştırır ve yeni bir dizi oluşturarak oluşturduğu değeri geriye döndürür.
+      Array.prototype.shuffle = function(){
+            var elemansayisi = this.length;
+            while(--elemansayisi > 0){
+                              
+                  var rastgelesayi =Math.floor (Math.random() * (elemansayisi + 1));
+                  var gecicideger = this[rastgelesayi];
+                  this[rastgelesayi] =this[elemansayisi];
+                  this[elemansayisi] =gecicideger;
+            return this;
+            }
+      }
+                                    
+      var icerikler = ["A", "B", "C", "D", "E"]; //1 2 3 4 5 6  şeklindede girebilirsin
+      document.write(icerikler + "<br />");
+             
+      var karistir = icerikler.shuffle();
+      document.write(karistir);
+
+</script>
+</head>
+<body>
+</body>
+</html>

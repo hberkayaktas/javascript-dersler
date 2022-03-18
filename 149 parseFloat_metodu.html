@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+// parseFloat ():Kendisine parametre olarak verilen değer doğrultusunda değişken
+// içeriğini ondalıklı sayı haline dönüştürerek, yeni bir içerik oluşturur
+// ve oluşturduğu içeriği geriye döndürür. (Rakam, eksi değeri, arti değeri
+// veya nokta haricinde bir karakter gördüğünde işlem durur.)
+
+            
+var degerbir ="10";
+var degeriki ="18.55";
+var degeruc="30 20 10";
+var degerdort=" 45 ";
+var degerbes="10 numara";
+var degeralti="No 10";
+var degeryedi=50;
+var degersekiz=30.66;
+var degerdokuz=-45;
+            
+var vtdegerbir =typeof (degerbir);
+var vtdegeriki =typeof (degeriki);
+var vtdegeruc =typeof(degeruc);
+var vtdegerdort =typeof (degerdort);
+var vtdegerbes =typeof (degerbes);
+var vtdegeralti =typeof (degeralti);
+var vtdegeryedi =typeof (degeryedi);
+var vtdegersekiz =typeof (degersekiz);
+var vtdegerdokuz =typeof (degerdokuz);
+                          
+
+var sonucbir =typeof(sonucbir);
+var sonuciki=typeof(sonuciki);
+var sonucuc=typeof (sonucuc);
+var sonucdort=typeof (sonucdort);
+var sonucbes=typeof(sonucbes);
+var sonucalti=typeof (sonucalti);
+var sonucyedi=typeof (sonucyedi);
+var sonucsekiz=typeof (sonucsekiz);
+var sonucdokuz=typeof (sonucdokuz);
+
+
+var vtsonucbir=parseFloat (degerbir);
+var vtsonuciki=parseFloat(degeriki);
+var vtsonucuc=parseFloat(degeruc);
+var vtsonucdort=parseFloat (degerdort);
+var vtsonucbes=parseFloat(degerbes);
+var vtsonucalti=parseFloat(degeralti);
+var vtsonucyedi=parseFloat(degeryedi);
+var vtsonucsekiz=parseFloat (degersekiz);
+var vtsonucdokuz=parseFloat (degerdokuz);   
+            
+document.write("Değer1:"+ degerbir + "(" + vtdegerbir + ") <br />");
+document.write("Sonuç:"+ sonucbir + " (" + vtsonucbir + ") <br /><br />");
+                          
+                          
+document.write("Değer2:"+ degeriki + "(" + vtdegeriki + ") <br />");
+document.write("Sonuç:"+ sonuciki + "(" + vtsonuciki + ") <br /><br />");
+                                                                
+document.write("Değer3: " + degeruc +"(" + vtdegeruc + ") <br />");
+document.write("Sonuç:" + sonucuc  + "(" + vtsonucuc + ") <br /><br />");
+                                                                                     
+document.write("Değer4:"+ degerdort + "("+ vtdegerdort + ") <br />");
+document.write("Sonuç:"+ sonucdort + "(" + vtsonucdort + ") <br /><br />"); 
+                                                            
+document.write("Değer5: " + degerbes + " ("+ vtdegerbes + ") <br />");
+document.write("Sonuç:" + sonucbes + "(" + vtsonucbes + "  ) <br /><br />");
+                                                                          
+document.write("Değer6:"+ degeralti+ "(" + vtdegeralti +") <br />");
+document.write("Sonuç:"+ sonucalti + "(" + vtsonucalti +") <br /><br />");
+                          
+                        
+document.write("Değer7: " + degeryedi + "("  + vtdegeryedi +  " ) <br />");                                     
+document.write("Sonuç:"   + sonucyedi + "(" + vtsonucyedi + ") <br /><br />");                                         
+                                                                 
+document.write("Değer8:  "  + degersekiz + " ("+ vtdegersekiz + ") <br />");                     
+document.write("Sonuç: " + sonucsekiz + " (" + vtsonucsekiz + ") <br /><br />");                                             
+
+document.write ("Değer9:"+ degerdokuz + " (" + vtdegerdokuz + ") <br />");
+document.write("Sonuç:" + sonucdokuz + " (" + vtsonucdokuz + ")<br>");
+
+//kısa hali
+var dd = "10";
+      document.write(typeof(dd) + "<br>");
+var ss = parseFloat(dd);
+      document.write(typeof(ss) + "<br>");
+                                                                  
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+      // isNaN () Kendisine parametrik olarak verilen değişken içeriğinin 
+      //Nan (Not a Number) (sayı deği1) değerinde olup olmadığını kontrol
+      // ederek boolean (mantiksal) veri türünde sonucu geriye döndürür.
+
+      var degerbir= "Volkan Alakent"; 
+      var degeriki = 8;
+      var degeruc =5.55;
+      var degerdort = NaN;
+                
+ 
+      var sonucbir = Number.isNaN(degerbir);
+      var sonuciki = Number.isNaN(degeriki);
+      var sonucuc = Number.isNaN(degeruc);
+      var sonucdort = Number.isNaN(degerdort);
+
+      document.write("Değer: " + degerbir + "<br />");
+      document.write("Sonuç: " + sonucbir + "<br /><br />");
+
+      document.write("Değer: " + degeriki + "<br />");
+      document.write("Sonuç: " + sonuciki + "<br /><br />");
+
+      document.write("Değer: " + degeruc + "<br />");
+      document.write("Sonuç: " + sonucuc + "<br /><br />");
+                                                                                                                 
+      document.write("Değer: " + degerdort + "<br />");
+      document.write("Sonuç: " + sonucdort);
+                                                                                                              
+
+
+</script>
+</body>
+</html>     

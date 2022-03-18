@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    // forEach () Kendisine parametre olarak verilen fonksiyonu dizideki her eleman
+    // üzerine tek tek çalıştırır ve geriye herhangi bir değer döndürmez.
+    // Fakat istenirse ilgili değerlere erişilebilir.
+    // 1. parametre :Her işlemde elde edilen dizi elemanı.
+    // 2. parametre :Her işlemde elde edilen dizi elemanın indis / index değeri.
+    // 3. parametre:Tekrarlama işlemi için dizinin atandığı değişkenin referans1.
+
+
+    function islem(eleman, sira, degisken){
+        sonuc  = sonuc + " Çalıştı " + eleman + "<br />"
+    }
+    var sonuc = "";
+    var sayilar = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]; 
+    document.write(sayilar + "<br />");
+    sayilar.forEach(islem);
+    document.write(sonuc);
+       
+</script>
+</head>
+<body>
+</body>
+</html>

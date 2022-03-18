@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    // some () Kendisine parametre olarak belirtilen fonksiyon 
+    // true (doğru / geçerli / olumlu/ başarılı) değeri
+    // döndürene kadar dizi elemanları üzerinde sıra ile gezinilmesini sağlar. 
+    // 1. parametre :Her işlemde elde edilen dizi elemanı.
+    // 2. parametre :Her işlemde elde edilen dizi elemanının indis / index değeri.
+    // 3. parametre :Her tekrarlama işleminde diziyi tutan değişkenin referans1.
+
+    function islem(eleman, sira, degisken){
+        sonuc = eleman;
+        return eleman % 3 === 0; 
+        // eleman eşleşen değeri verir
+        // biz küçük bir işlem daha yapıyoruz oda 3 e tam bölünenleri alıyoruz
+        // normalde ilk eşleşeni verir misal 6 yı geri döndür müyor
+        
+    }
+
+    var sonuc =0;
+    var rakamlar =  [16, 23, 65, 32, 88, 33, 19, 6];
+    document.write(rakamlar + "<br />");
+
+    rakamlar.some(islem);
+    document.write(sonuc);
+       
+</script>
+</head>
+<body>
+</body>
+</html>

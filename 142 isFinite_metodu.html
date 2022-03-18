@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+      // isFinite() Kendisine parametrik olarak verilen değişken içeriğinin en büyük
+      // pozitif sayı ile en küçük negatif sayı aralığında olup olmadığını kontrol ederek,
+      // boolean (mantiksal) veri türünde sonucu geriye döndūrür.
+var degerbir =100;
+var degeriki =55.42;
+var degeruc =13264274523745;
+var degerdort =Number. MAX_VALUE * 2;
+var degerbes =-Number. MAX_VALUE * 2;
+           
+var sonucbir =    Number.isFinite(degerbir);
+var sonuciki =    Number.isFinite(degeriki);
+var sonucuc =     Number.isFinite(degeruc);
+var sonucdort =   Number.isFinite(degerdort);
+var sonucbes =    Number.isFinite(degerbes);           
+           
+document.write("Değer: " + degerbir + "<br />");
+document.write("Sonuç: " + sonucbir + "<br /><br />");
+
+document.write("Değer: " + degeriki + "<br />");
+document.write("Sonuç: " + sonuciki + " <br /><br />");
+
+document.write("Değer: " + degeruc + "<br />");
+document.write("Sonuç: " + sonucuc + "<br /><br />");
+
+document.write("Değer: " + degerdort + "<br />");
+document.write("Sonuç: " + sonucdort + "<br /><br />");
+
+document.write("Değer: " + degerbes + "<br />");
+document.write("Sonuç: " + sonucbes + "<br /><br />");           
+           
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+     // issafeInteger () Kendisine parametrik olarak verilen değişken
+     // içeriğinin güvenli bir tam sayı olup olmadığını kontrol ederek,
+     // boolean (mantiksal) veri türünde sonucu geriye döndürür.
+
+      var degerbir =5;
+      var degeriki =3.22;
+      var degeruc =1.1307794501951706e+23;
+                   
+      var sonucbir =Number.isSafeInteger (degerbir);
+      var sonuciki =Number.isSafeInteger (degeriki);
+      var sonucuc =Number.isSafeInteger (degeruc);
+
+      document.write(degerbir + "<br />");
+      document.write(sonucbir + "<br /><br />");
+
+      document.write(degeriki + "<br />");
+      document.write(sonuciki + "<br /><br />");
+      
+      document.write(degeruc + "<br />");
+      document.write(sonucuc);
+
+
+</script>
+</body>
+</html>

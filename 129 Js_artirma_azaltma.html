@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <script>
+            var rakam = 10;
+            document.write(rakam + "<br>");
+
+            //sonradan artırma
+            rakam++;
+            document.write(rakam + "<br>");
+
+            //önceden artırma
+            var rakam = 10;
+            ++rakam;
+            document.write(rakam + "<br>");
+            //farkı bir koşul sorgulamasında daha net görünür
+
+            //sonradan azaltma
+            var rakam = 10;
+            rakam--;
+            document.write(rakam + "<br>");
+
+            var rakam = 10;
+            --rakam;
+            document.write(rakam + "<br>");
+
+            //farkı anlamak için örnek
+            var rakam = 10;
+            if(--rakam == 10){
+                  document.write("a");
+            }else{
+                  document.write("b"); 
+                  // önden azalttığımız için koşula girince 9 olarak göründü 
+            }
+
+
+
+      </script>
+</body>
+</html>

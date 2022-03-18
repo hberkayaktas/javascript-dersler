@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+      // parseInt ():Kendisine parametre olarak verilen değerler doğrultusunda değişken içeriğini
+      // tam sayı haline dönüştürerek, yeni bir içerik oluşturur ve oluşturduğu değeri geriye döndürür.
+      //(Rakam, arti değeri veya eksi değer
+      // haricinde bir karakter gördüğünde işlem durur.)
+      
+      var degerbir="10";
+      var degeriki="10.55";
+      var degeruc="30 20 10";
+      var degerdort=" 25 ";
+      var degerbes="Fiyat 10";
+      var degeralti="10 numara işlem";           
+                 
+      var sonucbir = parseInt(degerbir);
+      var sonuciki =   parseInt(degeriki);
+      var sonucuc  =   parseInt (degeruc);
+      var sonucdort =    parseInt(degerdort);
+      var sonucbes  =   parseInt (degerbes);
+      var sonucalti   =    parseInt(degeralti);
+
+      document.write("Değer: " + degerbir + "<br />");
+      document.write("Sonuç: "+ sonucbir + "<br /><br />");
+
+      document.write("Değer: " + degeriki + "<br />");
+      document.write("Sonuç: " + sonuciki + "<br /><br />");
+
+      document.write("Değer: " + degeruc + "<br />");
+      document.write("Sonuç:" + sonucuc + "<br /><br />");
+
+      document.write("Değer: " + degerdort + "<br />"); 
+      document.write("Sonuç: " + sonucdort + "<br /><br />");
+
+      document.write("Değer:"+ degerbes + "<br />");
+      document.write("Sonuç:"+ sonucbes + "<br /><br />");
+                                              
+      document.write("Değer: " + degeralti + "<br />");
+      document.write("Sonuç:" + sonucalti);
+
+</script>
+</body>
+</html>
