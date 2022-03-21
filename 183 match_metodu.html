@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+// match () Kendisine parametre olarak verilen düzenli ifadeli değer doğrultusunda
+// değişken içeriğini kontrol eder ve aranan değerlerin eşleşmesi
+// durumunda eşleşmeyi sağlayan değişken içeriği değerlerinden yeni bir
+// dizi oluşturarak, oluşturduğu dizi değerini geriye döndürür.
+
+               
+var metin = "Merhaba Berkay nasılsın?";
+           
+           
+var ifade = new RegExp("Berkay");
+var sonuc = metin.match(ifade);
+document.write(sonuc);  
+
+// Veya
+
+var metin = "Merhaba Volkan nasılsın?";
+var ifade = /Volkan/;
+
+var sonuc = metin.match(ifade); 
+document.write(sonuc);
+
+</script>
+</body>
+</html>

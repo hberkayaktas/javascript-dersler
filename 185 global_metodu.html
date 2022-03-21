@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+// global Düzenli ifade içerisinde g ayarıın kullanılıp kullanılmadığını
+// kontrol ederek boolean (mantiksal) veri türünde sonucu geriye döndürūr
+
+      var metin = "Volkan Volkan";
+      var ifade = new RegExp("Volkan","g");
+      var sonuc = metin.match(ifade);
+      var kontrol =ifade.global; //kontrol kısmı
+
+      document.write(sonuc + "<br />");
+      document.write(kontrol);     
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+// i Düzenli ifade dahilinde kontrol edilecek olan değişken içeriğinin
+// büyük harf / küçük harf ayrımı olmaksızın kontrol edilmesini sağlar.
+
+
+var deger = "Merhaba Volkan nasılsın? Senin ismin VolKan değilmiydi?";
+var ifade =new RegExp("volkan","i");  
+//veya hepisni arasın istiyorsan "gi"
+
+
+
+//başka şekilde reg exp tanımlama
+// var ifade = /volkan/i;
+
+var sonuc = deger.match(ifade);
+
+
+document.write(sonuc);   
+
+</script>
+</body>
+</html>
