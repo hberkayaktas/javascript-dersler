@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+// {x,y} Düzenli ifade dahilinde kontrol edilecek olan değişken
+// içeriği karakter diziliminde bulunan değerin en az x defa
+// yada en fazla y defa tekrarlanmış olması gerektiğini
+// belirtmek için kullanılır.
+
+var metin ="Javaaaaaascipt";
+var ifade = new RegExp("a{2,4}");
+// değer {enaz,ençok} 
+var sonuc = metin.match(ifade);
+
+document.write(sonuc);
+
+</script>
+</body>
+</html>

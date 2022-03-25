@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+// {x,} Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği
+// karakter diziliminde bulunan değerin x defa yada daha fazla
+// tekrarlanmış olması gerektiğini belirtmek için kullanılır.
+
+var metin = "Javascipt eğittttttim seti";
+
+var ifadebir= new RegExp("t{3}");
+var ifadeiki =new RegExp("t{3,}");
+
+var sonucbir =metin.match(ifadebir);
+var sonuciki= metin.match(ifadeiki);
+
+document.write(sonucbir + "<br />");
+document.write(sonuciki);
+
+</script>
+</body>
+</html>

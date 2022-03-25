@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+// ^ : Düzenli ifade dahilinde kontrol edilecek olan değişken
+// içeriği karakter diziliminin başlangıcı ile düzenli ifade
+// arasında eşleşme aramak için kullanılır.
+      
+     
+     
+  var metin = "Volkan Alakent Javascript eğitim seti";
+  var ifade = new RegExp ("^Javascript");
+  
+  // javascript ifadesi başta olmadığı için false döner
+
+  var sonuc = ifade.test(metin);
+  document.write(sonuc);
+
+
+</script>
+</body>
+</html>

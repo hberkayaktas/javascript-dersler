@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+// \B Düzenli ifade dahilinde kontrol edilecek olan değişken
+// içeriğinin düzenli ifadeye uygun olabilecek metin parçalarını,
+// karakter dizilimi içerisindeki kelimelerin içerisinde 
+// aramak için kullanılr.
+
+
+
+var metin = "Tarık oooooTarıkoo tarık";
+var ifade = new RegExp("\\BTarık");
+var sonuc = metin.search(ifade);
+document.write(sonuc);
+
+</script>
+</body>
+</html>

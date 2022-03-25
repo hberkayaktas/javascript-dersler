@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+// replace(): Kendisine verilecek olan düzenli ifadeli parametreler doğrultusunda
+// değişken içeriğini kontrol eder ve aranan değerin eşleşmesi
+// durumunda eşleşmeyi sağlayan değerlerin değişimin sağlayarak
+// yeni bir içerik oluşturur ve oluşturduğu
+// değeri geriye döndürür.
+             
+var metin = "Merhaba Volkan, merhaba Hakan, merhaba Onur";
+       
+        
+var ifade = new RegExp("hakan","i");
+var sonuc = metin.replace(ifade, "Ümit");
+document.write(sonuc);
+      
+
+
+</script>
+</body>
+</html>

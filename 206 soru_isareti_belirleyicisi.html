@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+// ?= Düzenli ifade dahilinde kontrol edilecek olan değişken
+// içeriği karakter dizilimi içerisindeki belirtilen bir
+// referans değerin önünde düzenli ifade ile eşleşebilecek
+// değerleri aramak için kullanılır.
+
+
+var metin = "Javascript dünya üzerinde ve Türkiye'de en yaygın olarak kullanı lmakta olan script dilidir.";
+var ifade = new RegExp("script(?= di)");
+// "di" ifadesinden önce geçen script ifadesinin indis değeri
+
+var sonuc = metin.search(ifade);
+document.write(sonuc);
+
+</script>
+</body>
+</html>

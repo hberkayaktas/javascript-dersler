@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+// \b Düzenli ifade dahilinde kontrol edilecek olan değişken
+// içeriğinin düzenli ifadeye uygun olabilecek metin parçalarım,
+// karakter dizilimi içerisindeki kelimelerin başında yada
+// sonunda aramak için kullanılır.
+
+var metin ="xvolkanx xvolkan xvolkanx";
+var ifade =/volkan\b/;
+
+//b baştaysa volkanı başta arar
+// b sonda ise sonda arar
+var sonuc =metin.search(ifade);
+
+document.write(sonuc);
+
+</script>
+</body>
+</html>

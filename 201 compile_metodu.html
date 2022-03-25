@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+// compile() Önceden oluşturulmuş düzenli ifade içerisindeki
+// desenin değiştirilmesini sağlar.
+var metin ="Merhaba volkan merhaba hakan";
+var ifade = new RegExp("Volkan", "i");
+
+var sonucbir = metin.match(ifade);
+document.write(sonucbir + "<br />");
+
+ifade.compile("HAKAN"); 
+var sonuciki = metin.match(ifade);
+document.write(sonuciki + "<br />");
+
+</script>
+</body>
+</html>

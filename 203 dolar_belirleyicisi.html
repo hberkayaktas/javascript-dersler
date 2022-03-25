@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+// $ Düzenli ifade dahilinde kontrol edilecek olan değişken
+// içeriği karakter diziliminin sonu ile düzenli ifade
+// arasında bir eşleşme aramak için kullanılır.
+
+var metin = "Dersimizin konusu Javascript";
+var ifade = new RegExp("Javascript$");
+var sonuc = ifade.test(metin);
+document.write(sonuc);
+
+</script>
+</body>
+</html>
