@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+// lastMatch Değişken içeriĝinde düzenli ifade ile aranan
+// değerin eşleşmesi durumunda son eşleşmeyi sağlayan değişken
+// içeriğinin değerini geriye döndürür.
+
+var metin = "Dünyada ve Türktye'de en yaygın olarak kullanılan script dili Javascript'tir.";
+            
+var ifade =new RegExp("script", "g");
+ifade.test(metin);
+var sonuc = RegExp.lastMatch; 
+//son script değerini geriye döndürür
+
+document.write(sonuc);
+
+
+</script>
+</body>
+</html>

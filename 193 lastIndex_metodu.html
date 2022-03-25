@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+// lastIndex Değişken içeriğinde düzenli ifade ile aranan
+// değerin eşleşmesi durumunda ilk eşleşmeyi sağlayan
+// değişken içeriğinin bir sonraki
+// indis / index değerini geriye döndürür
+
+var metin ="Dünyada ve rürkiye'de en yaygın olarak kullanılan script dili Javascript'tir.";
+var ifade = new RegExp("ve","g");
+ifade.test(metin);
+        
+var sonuc = ifade.lastIndex;
+document.write(sonuc);
+
+</script>
+</body>
+</html>

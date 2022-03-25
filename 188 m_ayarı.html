@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+
+// m Düzenli ifade dahilinde kontrol edilecek olan
+// değişken içeriğinin birden fazla satır varsa tüm
+// satırların kontrol ediLmesini sağlar.        
+          
+var metin ="\nVolkan\nvolkan\nVOLKAN"; 
+// \n = yeni satır ifadesi
+var ifade = new RegExp("^Volkan", "mgi"); 
+//şapka koymamızın sebebi ilk karakter volkan mı diye sorgulama
+/*
+m = tümsatırları ara 
+g= tüm satırı ara
+i = büyük küçük farketmeksizin ara  
+*/
+var sonuc =metin.match(ifade);
+document.write(sonuc);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+// input Değişken içeriğinde düzenli ifade ile aranan değerin
+// eşleşmesi durumunda eşleşmeyi sağlayan değişken içeriğinin
+// tüm değeri geriye dönürür.
+
+
+var metin ="Volkan Alakent Javascript eğitim seti.";
+var ifade =new RegExp("Javascript");
+var kontrol = ifade.test(metin);
+var sonuc = RegExp.input;
+document.write(sonuc +"<br>");
+
+
+//kontrol yapıp eşleşme varsa yazdırma
+if(kontrol==true){
+      var sonuc = RegExp.input;
+      document.write(sonuc +"<br>");
+}else{
+      document.write("Herhangi bir eşleşme bulunamadı!"+"<br>");
+}
+
+</script>
+</body>
+</html>
