@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+// ? Düzenli ifade dahilinde kontrol edilecek olan değişken
+// içeriği karakter diziliminde bulunan değerin e defa yada 1
+// defa tekrarlanmnş olması gerektiğini belirtmek için kullanılır.
+ 
+
+
+var metin ="Javascript dilinin dosya uzantisi js jss jsss şeklindedir.";
+var ifade =new RegExp("js?","gi"); 
+// tümünü tara büyük küçük harf duyarsız tara
+
+var sonuc = metin.match(ifade);
+document.write(sonuc);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+// [abc] Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği
+// karakter diziliminde bulunan değerin, belirtilen karakterlerden
+// herhangi birisi 1le eşleşmesi gerektiğini belirtmek için kullanılır.
+
+var metin ="Volkan Alakent Javascript eğitim seti.";
+var ifade =new RegExp("[Javascript]", "g");
+var sonuc =metin.match(ifade);
+
+document.write(sonuc);
+
+</script>
+</body>
+</html>

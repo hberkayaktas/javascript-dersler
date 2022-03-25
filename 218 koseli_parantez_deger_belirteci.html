@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+// [a-z] Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği
+// karakter diziliminde bulunan değerin, belirtilen karakter aralığından
+// herhangi birisi ile eşleşmesi gerektiğini belirtmek için kullanmlır.
+
+
+var metin ="Volkan Alakent 1980 Doğumludur.";
+var ifade = new RegExp("[a-zğ]","gi"); // [abc.....xyz] veya [A-Z] 
+var sonuc =metin.match(ifade);
+
+document.write(sonuc);
+
+</script>
+</body>
+</html>

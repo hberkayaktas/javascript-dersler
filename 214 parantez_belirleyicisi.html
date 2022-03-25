@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+// ()  :  Düzenli ifadelerde grup tanımlamak için kullanmlır.
+var metin = "Volkan Alakent Html ve Javascript eğitim seti.";
+var ifade = new RegExp(" (Html|Javascript)", "g");
+var sonuc = metin.match(ifade); 
+
+document.write(sonuc +"<br>");
+
+
+var metin2 = "Volkan Alakent Javascript eğitim seti.";
+var ifade2 = new RegExp("(J)(a)(v)(a)(s)(c)(r)(i)(p)(t)");
+var sonuc2 = metin2.match(ifade2);
+document.write(sonuc2);
+
+</script>
+</body>
+</html>

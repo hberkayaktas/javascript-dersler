@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+// [^a-z] Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter
+// diziliminde bulunan değerin, belirtilen karakter aralığı dışındak
+// karakterlerin herhangi birisi ile eşleşmesi
+// gerektiğini belirtmek için kullanılır.
+
+var metin = "Javascript Volkan Alakent 2022";
+var ifade = new RegExp("[^a-t]","gi"); // abc.....rst
+var sonuc = metin.match(ifade);
+
+document.write(sonuc);
+
+</script>
+</body>
+</html>

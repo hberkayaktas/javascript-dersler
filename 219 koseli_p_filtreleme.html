@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+</head>
+<body>
+<script>
+
+// [^abc] Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter
+// diziliminde bulunan değerin, belirtilen karakterler dışındaki karakterlerden
+// herhangi birisi ile eşleşmesi gerektiğini belirtmek için kullamlır.
+
+
+var metin ="Volkan Alakent Javascript";
+var ifade =new RegExp("[^VAJ]", "g");
+      
+var sonuc =  metin.match(ifade) 
+document.write(sonuc);
+</script>
+</body>
+</html>
